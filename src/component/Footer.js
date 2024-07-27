@@ -1,6 +1,8 @@
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      @2030 Routemate
+    </footer>
   )
 }
