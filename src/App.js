@@ -6,7 +6,9 @@ import { Home } from './component/Home';
 import { Contact } from './component/Contact';
 import { Header } from './component/Header';
 import { Footer } from './component/Footer';
+import { Admin } from "./component/Admin";
 function App() {
+  const user = false;
   return (
     
     <div className="App">
@@ -17,7 +19,7 @@ function App() {
         <Route path="products" element={<ProductList/>}/>
         <Route path="products/1001" element={<ProductDetail/>}/>
         <Route path="contact" element={<Contact/>}/>
-        <Route path="/admin" element={<Navigate to="/products"/>}/>
+        <Route path="/admin" element={user ? <Admin/> :<Navigate to="/"/>}/>
 
       </Routes>
 
