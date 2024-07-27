@@ -11,7 +11,7 @@ export const Contact = () => {
   return (
     <>
      <div className="component">Contact</div>
-     <button onClick={handleSubmit}>Back to Home</button>
+     <button onClick={handleSubmit}>Submit</button>
     </>
    
   )
