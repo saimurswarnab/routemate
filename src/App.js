@@ -1,4 +1,4 @@
-import { Routes , Route} from "react-router-dom";
+import { Routes , Route, Navigate} from "react-router-dom";
 import './App.css';
 import { ProductDetail } from './component/ProductDetail';
 import { ProductList } from './component/ProductList';
@@ -17,6 +17,7 @@ function App() {
         <Route path="products" element={<ProductList/>}/>
         <Route path="products/1001" element={<ProductDetail/>}/>
         <Route path="contact" element={<Contact/>}/>
+        <Route path="/admin" element={<Navigate to="/products"/>}/>
 
       </Routes>
 
