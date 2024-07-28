@@ -1,16 +1,11 @@
 import { Routes , Route, Navigate} from "react-router-dom";
 import './App.css';
-import { ProductDetail } from './component/ProductDetail';
-import { ProductList } from './component/ProductList';
-import { Home } from './component/Home';
-import { Contact } from './component/Contact';
-import { Header } from './component/Header';
-import { Footer } from './component/Footer';
-import { Admin } from "./component/Admin";
-import { PageNotFound } from "./component/PageNotFound";
-import { ContactEu } from "./component/ContactEu";
-import { ContactUs } from './component/ContactUs';
-import { ContactIn } from './component/ContactIn';
+
+import { Home, Admin, ProductDetail, ProductList, Contact, ContactEu, ContactIn, ContactUs, PageNotFound } from './pages/index';
+
+import { Header,Footer } from './component/index';
+
+
 function App() {
   const user = false;
   return (
