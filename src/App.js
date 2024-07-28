@@ -9,7 +9,7 @@ import { Footer } from './component/Footer';
 import { Admin } from "./component/Admin";
 import { PageNotFound } from "./component/PageNotFound";
 function App() {
-  const user = true;
+  const user = false;
   return (
     
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
         <Route path="products" element={<ProductList/>}/>
         <Route path="products/:id" element={<ProductDetail/>}/>
         <Route path="contact" element={<Contact/>}/>
-        <Route path="/admin" element={user ? <Admin/> : <PageNotFound/>}/>
+        <Route path="/admin" element={user ? <Admin/> :<Navigate to="/"/>}/>
         <Route path="*" element={<PageNotFound/>}/>
 
       </Routes>
