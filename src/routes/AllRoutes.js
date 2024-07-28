@@ -1,5 +1,5 @@
 import { Routes , Route, Navigate} from "react-router-dom";
-import { Home, Admin, ProductDetail, ProductList, Contact, ContactEu, ContactIn, ContactUs, PageNotFound } from '../pages/index';
+import { Home, Admin, ProductDetail, ProductList, Contact, ContactEu, ContactIn, ContactUs, PageNotFound } from '../pages';
 export const AllRoutes = () => {
 
   const user = false;

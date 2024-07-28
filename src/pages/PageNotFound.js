@@ -1,6 +1,10 @@
 
 export const PageNotFound = () => {
   return (
-    <div className="component">404 Opps</div>
+    <main>
+      <div className="component">404 Opps</div>
+
+    </main>
+    
   )
 }

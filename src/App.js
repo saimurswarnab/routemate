@@ -3,7 +3,7 @@ import './App.css';
 
 
 
-import { Header,Footer } from './component/index';
+import { Header,Footer } from './component';
 
 
 function App() {
@@ -12,13 +12,10 @@ function App() {
     
     <div className="App">
       <Header/>
-      <main>
+      
 
         <AllRoutes/>
 
-
-
-      </main>
       <Footer/>
     </div>
 

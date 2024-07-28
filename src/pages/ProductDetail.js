@@ -3,6 +3,10 @@ export const ProductDetail = () => {
   const params = useParams();
 
   return (
-    <div className="component"> Products - {params.id} </div>
+    <main>
+      <div className="component"> Products - {params.id} </div>
+
+    </main>
+    
   )
 }
